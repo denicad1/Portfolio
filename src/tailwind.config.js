@@ -5,6 +5,9 @@ module.exports = {
         'full':'50%'
       },
       extend: {
+        transitionProperty: {
+          'width': 'width'
+      },
       },
     },
     plugins: [],

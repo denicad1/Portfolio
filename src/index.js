@@ -1,3 +1,5 @@
+
+
   //hamburger menu toggle
   function menu() {
     const hamburger = document.getElementById("menu");
@@ -11,14 +13,25 @@
     const header=document.getElementsByTagName("header")[0];
     console.log(header);
     if (!change) {
-        sizeChange(header,"60","20")
+      headerWidth(header,"60","20");
+      imgResize();
     } else {
-        sizeChange(header,"20","60")
+      headerWidth(header,"20","60");
+      
     }
     
   }
-  function sizeChange(ele,size,size1) {
-    ele.classList.remove(`translate-x-${size}`);
-    ele.classList.add(`translate-x-${size1}`);
+  //change header width
+  function headerWidth(ele,size,size1) {
+    ele.classList.remove(`w-${size}`);
+    ele.classList.add(`w-${size1}`);
     
+  }
+  //resize img in header. still needs to be worked on. transition not working and overflow hidden removing most of image. 
+  //need to remove style from img element.
+  function imgResize() {
+   const img=document.getElementById("headerImage");
+   console.log(img);
+   img.classList.add("w-20", "h-20", "overflow-hidden");
+   img.classList.remove("-right-[50%]");
   }
