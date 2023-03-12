@@ -9,10 +9,12 @@
     <link rel="stylesheet" href="../build/stylesheets/index.css">
     <title>Anthony Denicolo</title>
 </head>
-<!--need hamburger menu to operate correctly-->
+<!--
+    need to make opacity transition work on start up but probably going to need to do that in JS
+-->
 
-<body>
-    <header class="box-border h-80 w-20 text-white bg-slate-600 h-screen border-black border-r-4 transition-all ease-in-out delay-150">
+<body class="bg-matte-green transition-opacity duration-1000 ease-out opacity-0 hover:opacity-100">
+    <header class="box-border bg-matte-orange h-screen transition-all ease-in-out delay-150 w-20 text-matte-dark-orange">
         <div>
             <button id="menu" class="hamburger hamburger--collapse" type="button" onclick="menu()">
                 <span class="hamburger-box">
@@ -21,9 +23,9 @@
               </button>
         </div>
         <div>
-            <!--need to figure out if pic should have a border or not-->
-            <div id="headerImage" class="relative -right-[50%] transition-all ease-in-out delay-150 " >
-                <img class="object-cover rounded-full border-black" style="height: 250px; width: 250px;" src="../resources/header.jpg" alt="Profile Picture">
+            <!--need to figure out if pic should be oval or circular. not big deal -->
+            <div id="headerImage" class="relative -right-[50%] transition-all ease-in-out delay-150" >
+                <img id="image" class="object-cover rounded-full border-emerald-300 border-4"  src="../resources/header.jpg" alt="Profile Picture">
             </div>
             <nav>
                 <!--section links. this is so it scrolls to the 

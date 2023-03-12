@@ -8,6 +8,13 @@ module.exports = {
         transitionProperty: {
           'width': 'width'
       },
+      colors: {
+        'matte-dark-orange' : '#E27D60',
+        'matte-orange':'#E8A87C',
+        'matte-dark-green':'#41B3A3',
+        'matte-green':'#85DCBA',
+        'matte-purple':'#C38D9E',
+      }
       },
     },
     plugins: [],

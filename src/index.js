@@ -14,10 +14,10 @@
     console.log(header);
     if (!change) {
       headerWidth(header,"60","20");
-      imgResize();
+      
     } else {
       headerWidth(header,"20","60");
-      
+      imgResize();
     }
     
   }
@@ -27,11 +27,13 @@
     ele.classList.add(`w-${size1}`);
     
   }
-  //resize img in header. still needs to be worked on. transition not working and overflow hidden removing most of image. 
-  //need to remove style from img element.
+  //resize headerImg in header. still needs to be worked on. transition not working and overflow hidden removing most of image. 
+  //need to remove style from headerImg element.
   function imgResize() {
-   const img=document.getElementById("headerImage");
-   console.log(img);
-   img.classList.add("w-20", "h-20", "overflow-hidden");
-   img.classList.remove("-right-[50%]");
+   const headerImg=document.getElementById("headerImage");
+    const img=document.getElementById("image");
+   console.log(headerImg);
+  //  headerImg.classList.toggle("-right-[50%]");
+  //  img.classList.toggle("border-emerald-300","border-4");
+
   }
