@@ -1,5 +1,5 @@
 module.exports = {
-    content: [ './*.html'],
+    content: [ './index.html'],
     theme: {
       borderRadius:{
         'full':'50%'
