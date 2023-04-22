@@ -13,6 +13,7 @@
     const header=document.getElementsByTagName("header")[0];
     if (!change) {
       headerWidth(header,"60","20");
+      console.log("changed");
 
       
     } else {
