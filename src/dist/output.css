@@ -780,6 +780,10 @@ video {
   width: 5rem;
 }
 
+.w-60 {
+  width: 15rem;
+}
+
 .flex-initial {
   flex: 0 1 auto;
 }
