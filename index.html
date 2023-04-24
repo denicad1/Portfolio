@@ -14,21 +14,22 @@
     need to make opacity transition work on start up but probably going to need to do that in JS
 -->
 
-<body class="bg-matte-green">
-    <header class=" bg-matte-orange h-screen sticky top-0 transition-all ease-in-out duration-500 w-20 text-matte-dark-orange">
+<body class="bg-matte-green flex justify-center">
+    <header class="bg-matte-orange h-screen sticky top-0 transition-all ease-in-out duration-500 w-20 text-matte-dark-orange hidden sm:block">
         <div>
             <button id="menu" class="hamburger hamburger--collapse" type="button" onclick="menu()">
                 <span class="hamburger-box">
-                  <span class="hamburger-inner"></span>
+                    <span class="hamburger-inner"></span>
                 </span>
-              </button>
+            </button>
         </div>
         <div>
             <!--need to figure out if pic should be oval or circular. not big deal -->
-            <div id="headerImage" class="relative -right-[50%] transition-all ease-in-out delay-150" >
-                <img id="image" class="object-cover rounded-full border-emerald-300 border-4"  src="/resources/header.jpg" alt="Profile Picture">
+            <div id="headerImage" class="relative -right-[50%] transition-all ease-in-out delay-150">
+                <img id="image" class="object-cover rounded-full border-emerald-300 border-4"
+                    src="/resources/images/header.jpg" alt="Profile Picture">
             </div>
-            <nav></nav>
+            <nav>
                 <!--section links. this is so it scrolls to the 
                 different sections or just make it load a new page for contact and intro. also need to be styled-->
                 <ul class="flex  flex-col items-center mt-8 text-center">
@@ -39,32 +40,61 @@
             </nav>
         </div>
     </header>
-    <main class="flex">
+    <main class="grid grid-cols-12  grid-flow-col w-screen m-auto">
         <!--project section-->
-        <section class="flex-initial">
-            <div>
-                <figure><a href="https://qr-code-generator-qqs9.onrender.com" target="_blank" rel="noopener noreferrer">link to QR Code Generator</a></figure>
-                <figcaption>hello</figcaption>
+        <section class="flex flex-row flex-wrap col-span-12 justify-around items-center" id="projects">
+            <!-- flex lg:flex-row flex-wrap flex-col -->
+            <div class="">
+                <a href="https://qr-code-generator-qqs9.onrender.com" target="_blank" rel="noopener noreferrer">
+                    <div class="lg:max-w-sm md:max-w-xl sm:max-w-sm max-w-xs rounded overflow-hidden shadow-lg">
+                        <img src="./resources/images/qr_code_generator.png" alt="Qr Code Generator" class="p-2">
+                        <div class="px-6 py-4">
+                            <div class="font-bold text-xl">QR Code Generator</div>
+                        </div>
+                        <div class="px-6 pt-4 pb-2">
+                            <span class=" text-sm font-semibold text-gray-700 mr-2 mb-6">This project creates a qr code
+                                image of your choosing</span>
+                        </div>
+                    </div>
+                </a>
             </div>
             <div>
-                <figure><a href="https://banker-uix8.onrender.com" target="_blank" rel="noopener noreferrer">link to Banker App</a></figure>
-                <figcaption>hello</figcaption>
+                <a href="https://banker-uix8.onrender.com" target="_blank" rel="noopener noreferrer">
+                    <div class="lg:max-w-sm md:max-w-xl sm:max-w-sm max-w-xs rounded overflow-hidden shadow-lg">
+                        <img src="./resources/images/banker.png" alt="Banker" class="p-2">
+                        <div class="px-6 py-4">
+                            <div class="font-bold text-xl">Banking App</div>
+                        </div>
+                        <div class="px-6 pt-4 pb-2">
+                            <span class=" text-sm font-semibold text-gray-700 mr-2 mb-6">This project is a basic banking app
+                                for transactions
+                                and accounts
+                            </span>
+                        </div>
+                    </div>
+                </a>
             </div>
-            <div>
-                <figure></figure>
-                <figcaption></figcaption>
-            </div>
-            <div>
-                <figure></figure>
-                <figcaption></figcaption>
+            <div class="">
+                <a href="https://employee-3ojr.onrender.com" target="_blank" rel="noopener noreferrer" class="block">
+                    <div class="lg:max-w-sm md:max-w-xl sm:max-w-sm max-w-xs rounded overflow-hidden shadow-lg content-center">
+                        <img src="./resources/images/employee_manager.png" alt="Employee Manager" class="p-2">
+                        <div class="px-6 py-4">
+                            <div class="font-bold text-xl">Employee Manager</div>
+                        </div>
+                        <div class="px-6 pt-4 pb-2">
+                            <span class=" text-sm font-semibold text-gray-700 mr-2 mb-6">Project for managing employees and
+                                logging into the system
+                            </span>
+                        </div>
+                    </div>
+                </a>
             </div>
         </section>
         <!--brief intro?-->
-        <section></section>
+        
         <!--footer with icons-->
         <footer>
             <div>
-
             </div>
         </footer>
     </main>
