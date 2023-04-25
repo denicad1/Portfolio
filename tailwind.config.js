@@ -15,6 +15,9 @@ module.exports = {
         'matte-dark-green':'#41B3A3',
         'matte-green':'#85DCBA',
         'matte-purple':'#C38D9E',
+        'indigo':'#033F63',
+        'picton-blue':'#3DA5D9',
+        'dogwood':'#E6CCBE',
       }
       },
     },
