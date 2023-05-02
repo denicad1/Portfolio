@@ -2,13 +2,14 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-body {
+/* body {
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-}
+} */
+
  
-@keyframes fadeInAnimation {
+/* @keyframes fadeInAnimation {
     0% {
         opacity: 0;
     }
@@ -20,5 +21,5 @@ body {
 @media only screen and (max-width: 1026px) {
    
 
-}
+} */
 

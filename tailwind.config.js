@@ -18,7 +18,9 @@ module.exports = {
         'indigo':'#033F63',
         'picton-blue':'#3DA5D9',
         'dogwood':'#E6CCBE',
-      }
+      },
+        
+      
       },
     },
     // safelist:['w-60'],

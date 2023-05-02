@@ -6,6 +6,7 @@
     hamburger.classList.toggle("is-active");
     let change=hamburger.classList.contains("is-active");
     headerResize(change);
+    navListToggle();
 
   }
 //changes header/sidebar size, moves image and clears links
@@ -34,6 +35,11 @@
   function imgResize() {
    const headerImg=document.getElementById("headerImage");
     const img=document.getElementById("image");
+
+  }
+  function navListToggle(){
+    const navList=document.getElementById("nav_list");
+    navList.classList.toggle("flex");
 
   }
   //this function might be useful later
