@@ -1,4 +1,4 @@
-
+const mail= ("./modules/mail");
 
   //hamburger menu toggle
   function menu() {
@@ -42,6 +42,11 @@
     navList.classList.toggle("flex");
 
   }
+  function handleSubmit(e){
+    e.preventDefault();
+    mail.mail();
+  }
+
   //this function might be useful later
   // function showText() {
   //   const texts=document.getElementsByClassName("added-text");
