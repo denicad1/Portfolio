@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <!-- still need pdf to show when clicking button at bottom and need to add scroll to section -->
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="./src/dist/output.css">
     <title>Anthony Denicolo's Page</title>
 </head>
+
 <body class="bg-indigo flex justify-center">
     <header class="bg-dogwood sticky lg:w-60 sm:block hidden text-matte-dark-orange left-0 top-0 h-screen">
         <div class="flex flex-col h-full">
@@ -16,7 +18,8 @@
                     src="/resources/images/header.jpg" alt="Profile Picture">
             </div>
             <div>
-                <p class="pt-8 px-2 text-center lg:block hidden">Hey I'm Anthony Denicolo <br> I used to truck drive but now I'm into this computer stuff</p>
+                <p class="pt-8 px-2 text-center lg:block hidden">Hey I'm Anthony Denicolo <br> I used to truck drive but
+                    now I'm into this computer stuff</p>
             </div>
             <hr class="mt-4 mx-8 h-1 border-0 bg-matte-dark-orange rounded">
             <nav class=" flex-1">
@@ -29,19 +32,20 @@
             </nav>
         </div>
     </header>
-    <main class="m-auto grid grid-rows-2" id="main">   
+    <main class="m-auto grid grid-rows-2" id="main">
         <!--project section-->
         <section class="flex flex-row flex-wrap justify-around items-center lg:pb-10" id="projects">
             <div class="w-full pl-7 mt-20 2xl:flex hidden">
                 <p>
                     <span class="text-5xl text-dogwood pb-40">
-                    Projects
-                    <br>
-                    <span class="text-xs">Not quite finished yet but working on it. Please be patient. Free hosting is slow.</span>
+                        Projects
+                        <br>
+                        <span class="text-xs">Not quite finished yet but working on it. Please be patient. Free hosting
+                            is slow.</span>
                     </span>
                 </p>
             </div>
-            
+
             <!-- flex lg:flex-row flex-wrap flex-col -->
             <div class="bg-dogwood">
                 <a href="https://qr-code-generator-qqs9.onrender.com" target="_blank" rel="noopener noreferrer">
@@ -65,7 +69,8 @@
                             <div class="font-bold text-xl">Banking App</div>
                         </div>
                         <div class="px-6 pt-4 pb-2">
-                            <span class=" text-sm font-semibold text-gray-700 mr-2 mb-6">This project is a basic banking app
+                            <span class=" text-sm font-semibold text-gray-700 mr-2 mb-6">This project is a basic banking
+                                app
                                 for transactions
                                 and accounts
                             </span>
@@ -81,7 +86,8 @@
                             <div class="font-bold text-xl">Employee Manager</div>
                         </div>
                         <div class="px-6 pt-4 pb-2">
-                            <span class=" text-sm font-semibold text-gray-700 mr-2 mb-6">Project for managing employees. Username=user and Password=password
+                            <span class=" text-sm font-semibold text-gray-700 mr-2 mb-6">Project for managing employees.
+                                Username=user and Password=password
                             </span>
                         </div>
                     </div>
@@ -94,57 +100,69 @@
                 <p class="text-8xl">Reach Out!</p>
                 <p class="text-xl">
                     Fill out the form below and I will get in touch with you as soon as possible
-                </p>               
+                </p>
             </div>
             <div class="flex justify-center">
                 <form class="w-full max-w-sm" onsubmit="handleSubmit(event)" action="" id="form">
                     <div class="md:flex md:items-center mb-6">
-                      <div class="md:w-1/3">
-                        <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" for="name">
-                          Full Name
-                        </label>
-                      </div>
-                      <div class="md:w-2/3">
-                        <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="name" type="text" placeholder="Name">
-                      </div>
+                        <div class="md:w-1/3">
+                            <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" for="name">
+                                Full Name
+                            </label>
+                        </div>
+                        <div class="md:w-2/3">
+                            <input
+                                class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+                                id="name" type="text" placeholder="Name">
+                        </div>
                     </div>
                     <div class="md:flex md:items-center mb-6">
-                      <div class="md:w-1/3">
-                        <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" for="email">
-                          Email
-                        </label>
-                      </div>
-                      <div class="md:w-2/3">
-                        <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="email" type="email" placeholder="Email@email.com">
-                      </div>
+                        <div class="md:w-1/3">
+                            <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" for="email">
+                                Email
+                            </label>
+                        </div>
+                        <div class="md:w-2/3">
+                            <input
+                                class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+                                id="email" type="email" placeholder="Email@email.com">
+                        </div>
                     </div>
                     <div class="md:flex md:items-center mb-6">
                         <div class="md:w-1/3">
                             <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" for="message">
-                              What's going on?
+                                What's going on?
                             </label>
-                          </div>
-                      <div class="md:w-2/3">
-                        <textarea class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="message" type="text" placeholder="Your Message" cols="30" rows="10"></textarea>
-                      </div>
+                        </div>
+                        <div class="md:w-2/3">
+                            <textarea
+                                class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+                                id="message" type="text" placeholder="Your Message" cols="30" rows="10"></textarea>
+                        </div>
                     </div>
                     <div class="md:flex md:items-center">
-                      <div class="md:w-1/3"></div>
-                      <div class="md:w-2/3">
-                        <button class="shadow bg-dogwood hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button">
-                          <input type="submit" value="Send Mail">
-                        </button>
-                      </div>
+                        <div class="md:w-1/3"></div>
+                        <div class="md:w-2/3">
+                            <button
+                                class="shadow bg-dogwood hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
+                                type="button">
+                                <input type="submit" value="Send Mail">
+                            </button>
+                        </div>
                     </div>
-                  </form>
+                </form>
             </div>
         </section>
         <footer class="w-full">
-            <div class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
-                <button>Click Here for My Resume</button>
-            </div>
+            <a href="resources/resume/A.Denicolo_Resume.pdf">
+                <div
+                    class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+                    <button>Click Here for My Resume</button>
+                </div>
+            </a>
         </footer>
     </main>
     <script src="/src/index.js"></script>
 </body>
+
 </html>
