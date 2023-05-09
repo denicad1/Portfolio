@@ -1,7 +1,5 @@
 {
   "dependencies": {
-    "hamburgers": "^1.2.1",
-    "nodemailer": "^6.9.1",
     "sass": "^1.58.3",
     "tailwindcss": "^3.2.7"
   }

@@ -1,51 +1,23 @@
-const mail= ("./modules/mail");
 
-  //hamburger menu toggle
-  function menu() {
-    const hamburger = document.getElementById("menu");
-    hamburger.classList.toggle("is-active");
-    let change=hamburger.classList.contains("is-active");
-    headerResize(change);
-    navListToggle();
+ const handleSubmit = e => {
+      e.preventDefault();
+      const form=document.getElementById("form");
+      const name=document.getElementById("name").value;
+      const email=document.getElementById("email").value;
+      const message=document.getElementById("message").value;
+      /* SmtpJS.com - v3.0.0 */
+      const Email = { send: function (a) { return new Promise(function (n, e) { a.nocache = Math.floor(1e6 * Math.random() + 1), a.Action = "Send"; var t = JSON.stringify(a); Email.ajaxPost("https://smtpjs.com/v3/smtpjs.aspx?", t, function (e) { n(e) }) }) }, ajaxPost: function (e, n, t) { var a = Email.createCORSRequest("POST", e); a.setRequestHeader("Content-type", "application/x-www-form-urlencoded"), a.onload = function () { var e = a.responseText; null != t && t(e) }, a.send(n) }, ajax: function (e, n) { var t = Email.createCORSRequest("GET", e); t.onload = function () { var e = t.responseText; null != n && n(e) }, t.send() }, createCORSRequest: function (e, n) { var t = new XMLHttpRequest; return "withCredentials" in t ? t.open(e, n, !0) : "undefined" != typeof XDomainRequest ? (t = new XDomainRequest).open(e, n) : t = null, t } };
+      Email.send({
+        SecureToken : "5ba60687-ede8-4faa-911c-08085ea8168c",
+        To : 'denicad@msn.com',
+        From : "denicad@msn.com",
+        Subject : "Email from Portfolio Site",
+        Body : `<h1>${name} sent you a message</h1><h2>their email is ${email}</h2><p>${message}</p>`
+                  }).catch(console.log())
+      form.reset();
+      }
+ 
 
-  }
-//changes header/sidebar size, moves image and clears links
-  function headerResize(change) {
-    const header=document.getElementsByTagName("header")[0];
-    if (!change) {
-      headerWidth(header,"60","20");
-      console.log("changed");
-
-      
-    } else {
-      headerWidth(header,"20","60");
-      imgResize();
-      
-    }
-    
-  }
-  //change header width
-  function headerWidth(ele,size,size1) {
-    ele.classList.remove(`w-${size}`);
-    ele.classList.add(`w-${size1}`); 
-    
-  }
-  //resize headerImg in header. still needs to be worked on. transition not working and overflow hidden removing most of image. 
-  //need to remove style from headerImg element.
-  function imgResize() {
-   const headerImg=document.getElementById("headerImage");
-    const img=document.getElementById("image");
-
-  }
-  function navListToggle(){
-    const navList=document.getElementById("nav_list");
-    navList.classList.toggle("flex");
-
-  }
-  function handleSubmit(e){
-    e.preventDefault();
-    mail.mail();
-  }
 
   //this function might be useful later
   // function showText() {
