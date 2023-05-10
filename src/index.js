@@ -17,15 +17,4 @@
       form.reset();
       }
  
-
-
-  //this function might be useful later
-  // function showText() {
-  //   const texts=document.getElementsByClassName("added-text");
-  //   const arrayTexts=[...texts];
-    
-  //   arrayTexts.forEach(ele => {
-  //     ele.classList.toggle("hideText"); 
-  //     ele.classList.toggle("showText");
-  //   });
-  // }
+const handlePDF =()=> window.open("../resources/resume/A.Denicolo_Resume.pdf", '_blank');
