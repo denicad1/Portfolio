@@ -10,7 +10,7 @@
     <title>Anthony Denicolo's Page</title>
 </head>
 
-<body class="bg-indigo flex justify-center">
+<body class="bg-gradient-to-b from-indigo flex justify-center">
     <header class="bg-dogwood sticky lg:w-60 sm:block hidden text-matte-dark-orange left-0 top-0 h-screen">
         <div class="flex flex-col h-full">
             <div id="headerImage" class="relative  top-5 transition-all ease-in-out delay-150 ">
@@ -24,10 +24,10 @@
             <hr class="mt-4 mx-8 h-1 border-0 bg-matte-dark-orange rounded">
             <nav class=" flex-1">
                 <!--section links-->
-                <ul class="flex  flex-col justify-around text-center h-full" id="nav_list">
-                    <li class=""><span>Portfolio</span></li>
-                    <li class=""><span>Contact</span></li>
-                    <li class=""><span>Resume</span></li>
+                <ul class="flex flex-col justify-around text-center h-full" id="nav_list">
+                    <li class="cursor-pointer mx-auto" onclick="scrollProjects()"><span class="">Portfolio</span></li>
+                    <li class="cursor-pointer mx-auto" onclick="scrollContact()"><span class="">Contact</span></li>
+                    <li class="cursor-pointer mx-auto" onclick="scrollContact()"><span class="">Resume</span></li>
                 </ul>
             </nav>
         </div>
@@ -144,7 +144,7 @@
                         <div class="md:w-1/3"></div>
                         <div class="md:w-2/3">
                             <button
-                                class="shadow bg-dogwood hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
+                                class="shadow bg-dogwood hover:bg-indigo focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
                                 type="button">
                                 <input type="submit" value="Send Mail">
                             </button>
@@ -155,7 +155,7 @@
         </section>
         <footer class="w-full">
                 <div onclick="handlePDF()"
-                    class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+                    class="bg-transparent hover:bg-indigo text-indigo font-semibold hover:text-white py-2 px-4 border border-indigo hover:border-transparent rounded">
                     <button>Click Here for My Resume</button>
                 </div>
         </footer>

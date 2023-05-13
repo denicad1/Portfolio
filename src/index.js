@@ -18,3 +18,15 @@
       }
  
 const handlePDF =()=> window.open("../resources/resume/A.Denicolo_Resume.pdf", '_blank');
+
+const scrollToSection = ele =>{
+  ele.scrollIntoView({ behavior: "smooth"})
+}
+const scrollProjects=()=>{
+  const projects=document.getElementById("projects");
+  scrollToSection(projects);
+}
+const scrollContact=()=>{
+  const contact= document.getElementById("form");
+  scrollToSection(contact);
+}
