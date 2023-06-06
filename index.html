@@ -11,15 +11,15 @@
 </head>
 
 <body class="bg-gradient-to-b from-indigo flex justify-center">
-    <header class="bg-dogwood sticky lg:w-60 sm:block hidden text-matte-dark-orange left-0 top-0 h-screen">
+    <header class=" sticky lg:w-60 sm:block hidden text-matte-dark-orange left-0 top-0 h-screen">
         <div class="flex flex-col h-full">
             <div id="headerImage" class="relative  top-5 transition-all ease-in-out delay-150 ">
-                <img id="image" class="object-cover rounded-full lg:w-48 lg:h-48 w-16 h-16 mx-auto"
-                    src="/resources/images/header.jpg" alt="Profile Picture">
+                <!-- <img id="image" class="object-cover rounded-full lg:w-48 lg:h-48 w-16 h-16 mx-auto"
+                    src="/resources/images/header.jpg" alt="Profile Picture"> -->
             </div>
-            <div>
-                <p class="pt-8 px-2 text-center lg:block hidden">Hey I'm Anthony Denicolo <br> I used to truck drive but
-                    now I'm into this computer stuff</p>
+            <div class="h-60">
+                <p class="pt-8 px-2 text-center lg:block hidden h-full leading-loose">Hey I'm Anthony Denicolo <br> I'm working on learning
+                web development so this is just the start</p>
             </div>
             <hr class="mt-4 mx-8 h-1 border-0 bg-matte-dark-orange rounded">
             <nav class=" flex-1">
@@ -27,7 +27,7 @@
                 <ul class="flex flex-col justify-around text-center h-full" id="nav_list">
                     <li class="cursor-pointer mx-auto" onclick="scrollProjects()"><span class="">Portfolio</span></li>
                     <li class="cursor-pointer mx-auto" onclick="scrollContact()"><span class="">Contact</span></li>
-                    <li class="cursor-pointer mx-auto" onclick="scrollContact()"><span class="">Resume</span></li>
+                    <li class="cursor-pointer mx-auto" onclick="handlePDF()"><span class="">Resume</span></li>
                 </ul>
             </nav>
         </div>
@@ -153,12 +153,12 @@
                 </form>
             </div>
         </section>
-        <footer class="w-full">
+        <!-- <footer class="w-3/4">
                 <div onclick="handlePDF()"
                     class="bg-transparent hover:bg-indigo text-indigo font-semibold hover:text-white py-2 px-4 border border-indigo hover:border-transparent rounded">
                     <button>Click Here for My Resume</button>
                 </div>
-        </footer>
+        </footer> -->
     </main>
     <script src="/src/index.js"></script>
 </body>
