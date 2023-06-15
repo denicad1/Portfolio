@@ -2,6 +2,7 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+
 .bg-main{
     background-image: linear-gradient(rgba(251, 249, 249, 0.4),rgba(0, 0, 0,0.4)),url("https://d33wubrfki0l68.cloudfront.net/daac8858fd4a0ccea44f59dfd079c3c16c263f33/c157c/assets/svg/common-bg.svg");
 }

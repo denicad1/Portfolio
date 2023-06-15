@@ -30,3 +30,20 @@ const scrollContact=()=>{
   const contact= document.getElementById("form");
   scrollToSection(contact);
 }
+
+window.addEventListener('scroll', (e) => {
+
+     // get all sections on the page
+    const section = document.getElementById('form');
+
+    // get px distance from top
+    const topDistance = section.getBoundingClientRect().top;
+
+    // if the distance to the top is between 0-100px
+    if ( topDistance < 1000) {
+      section.classList.remove('invisible');
+      section.classList.add('animate__animated','animate__fadeInUp');
+
+    // otherwise, remove the class
+    };
+});
