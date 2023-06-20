@@ -42,7 +42,7 @@ const animate = () => {
   }
 
   window.addEventListener('scroll', (e) => {
-    const eles = [new ele('form', 'animate__fadeInUp',800)
+    const eles = [new ele('form', 'animate__fadeInUp',700)
     ,new ele('projectsTitle', 'animate__slideInLeft',600)];
 
     eles.forEach((ele)=>{
