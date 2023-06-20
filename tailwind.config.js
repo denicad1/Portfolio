@@ -5,6 +5,9 @@ module.exports = {
         'full':'50%'
       },
       extend: {
+        fontFamily: {
+          'titillium': ['Titillium Web', 'sans-serif']
+        },
         transitionProperty: {
           'width': 'width'
       },
@@ -22,6 +25,5 @@ module.exports = {
       
       },
     },
-    // safelist:['w-60'],
     plugins: []
   }

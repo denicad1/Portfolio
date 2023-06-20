@@ -8,10 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/dist/output.css">
     <link rel="stylesheet" href="./src/style.css">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>Anthony Denicolo's Page</title>
 </head>
 
@@ -23,7 +20,9 @@
                     src="/resources/images/header.jpg" alt="Profile Picture"> -->
             </div>
             <div class="h-60">
-                <span class="h-full align-middle inline-block"></span><img src="./resources/images/logo-no-background.png" alt="Anthony Denicolo. Web Developer" class="  inline-block p-2 align-middle">
+                <span class="h-full align-middle inline-block"></span><img
+                    src="./resources/images/logo-no-background.png" alt="Anthony Denicolo. Web Developer"
+                    class="  inline-block p-2 align-middle">
                 <!-- <p class="pt-8 px-2 text-center lg:block hidden h-full leading-loose">Hey I'm Anthony Denicolo <br> I'm working on learning
                 web development so this is just the start</p> -->
             </div>
@@ -31,19 +30,38 @@
             <nav class=" flex-1">
                 <!--section links-->
                 <ul class="flex flex-col justify-around text-center h-full" id="nav_list">
-                    <li class="cursor-pointer mx-auto hover:underline text-neutral-700" onclick="scrollProjects()"><span class="">Portfolio</span></li>
-                    <li class="cursor-pointer mx-auto hover:underline text-neutral-700" onclick="scrollContact()"><span class="">Contact</span></li>
-                    <li class="cursor-pointer mx-auto hover:underline text-neutral-700" onclick="handlePDF()"><span class="">Resume</span></li>
+                    <li class="cursor-pointer mx-auto hover:underline text-neutral-700" onclick="scrollProjects()"><span
+                            class="">Portfolio</span></li>
+                    <li class="cursor-pointer mx-auto hover:underline text-neutral-700" onclick="scrollContact()"><span
+                            class="">Contact</span></li>
+                    <li class="cursor-pointer mx-auto hover:underline text-neutral-700" onclick="handlePDF()"><span
+                            class="">Resume</span></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main class="m-auto grid grid-rows-2 bg-main text-black" id="main">
+        <section class="h-screen shadow-2xl">
+            <video autoplay muted loop type="video/mp4" style="object-fit: fill;"
+                src="./resources/videos/videoplayback.mp4"
+                id="videoBG" class="absolute top-0 left-0 h-full min-w-full min-h-full">
+
+            </video>
+            <div class="h-full w-full flex justify-center items-center shade text-5xl ">
+                <div>
+                    <div class="-translate-x-80 -translate-y-32 text-white font-grandiflora">
+                        <div><span class="title">Anthony Denicolo</span></div>
+                        <div><span>Web Developer</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!--project section-->
-        <section class="flex flex-row flex-wrap justify-around items-center backdrop-blur-sm lg:pb-10 clip-path" id="projects">
-            <div class="w-full pl-7 mt-20 2xl:flex hidden animate__animated animate__slideInLeft">
+        <section class="flex flex-row flex-wrap justify-around items-center backdrop-blur-sm lg:pb-10 clip-path"
+            id="projects">
+            <div class="w-full pl-7 mt-20 2xl:flex animate__animated animate__fast invisible mb-36" id="projectsTitle">
                 <p class="">
-                    <span class="text-5xl pb-40">
+                    <span class="text-5xl ">
                         Projects
                         <br>
                         <span class="text-xs">Not quite finished yet but working on it. Please be patient, free hosting
@@ -101,8 +119,9 @@
             </div>
         </section>
         <!-- mail section -->
-        <section class="text-black flex items-center justify-center flex-col backdrop-blur-sm sm:h-screen h-5/6" id="formSection">
-            <div class="invisible"id="form">
+        <section class="text-black flex items-center justify-center flex-col backdrop-blur-sm sm:h-screen h-5/6"
+            id="formSection">
+            <div class="invisible" id="form">
                 <div class=" my-12 text-center">
                     <p class="text-8xl">Reach Out!</p>
                     <p class="text-xl">
