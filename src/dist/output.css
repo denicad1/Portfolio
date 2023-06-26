@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200&family=Titillium+Web:wght@600&display=swap');
 
 /*
 ! tailwindcss v3.3.2 | MIT License | https://tailwindcss.com
@@ -591,6 +591,10 @@ video {
   margin-right: 0.5rem;
 }
 
+.mt-10{
+  margin-top: 2.5rem;
+}
+
 .mt-20{
   margin-top: 5rem;
 }
@@ -647,6 +651,10 @@ video {
   min-height: 100%;
 }
 
+.w-1\/2{
+  width: 50%;
+}
+
 .w-16{
   width: 4rem;
 }
@@ -675,13 +683,8 @@ video {
   flex: 1 1 0%;
 }
 
-.translate-x-80{
-  --tw-translate-x: 20rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.translate-y-32{
-  --tw-translate-y: 8rem;
+.translate-x-0{
+  --tw-translate-x: 0px;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -725,6 +728,10 @@ video {
 
 .justify-around{
   justify-content: space-around;
+}
+
+.justify-items-center{
+  justify-items: center;
 }
 
 .rounded-full{
@@ -834,8 +841,21 @@ video {
   vertical-align: middle;
 }
 
+.font-inter{
+  font-family: Inter, sans-serif;
+}
+
 .font-mono{
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.font-titillium{
+  font-family: Titillium Web, sans-serif;
+}
+
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .text-5xl{
@@ -846,6 +866,11 @@ video {
 .text-8xl{
   font-size: 6rem;
   line-height: 1;
+}
+
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .text-sm{
@@ -869,6 +894,14 @@ video {
 
 .font-semibold{
   font-weight: 600;
+}
+
+.leading-10{
+  line-height: 2.5rem;
+}
+
+.leading-8{
+  line-height: 2rem;
 }
 
 .leading-loose{
@@ -951,14 +984,16 @@ video {
           clip-path: polygon(0 0, 100% 0, 100% 85%, 85% 100%, 0% 100%);
 }
 
-.title::before {
-  content: "Anthony Denicolo";
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: #ffffff;
-  transform: translate(1px,1px);
-}
+/* .title::before {
+    content: "Anthony Denicolo";
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #ffffff;
+    transform: translate(1px,1px);
+    
+    
+} */
 
 .shade::before{
   content: '';
@@ -967,7 +1002,8 @@ video {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, .1),rgba(0, 0, 0, .1));
+  /* background-image: linear-gradient(rgba(0, 0, 0, .5),rgba(0, 0, 0, .5)); */
+  background-image: linear-gradient(to right top, rgb(5, 25, 55,.9), rgb(0, 77, 122,.9), rgb(0, 135, 147,.9), rgb(0, 191, 114,.9), rgb(168, 235, 18,.9));
 }
 
 .hover\:border-transparent:hover{

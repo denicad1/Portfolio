@@ -6,7 +6,8 @@ module.exports = {
       },
       extend: {
         fontFamily: {
-          'titillium': ['Titillium Web', 'sans-serif']
+          'titillium': ['Titillium Web', 'sans-serif'],
+          'inter':['Inter', 'sans-serif']
         },
         transitionProperty: {
           'width': 'width'

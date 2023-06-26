@@ -1,8 +1,7 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200&family=Titillium+Web:wght@600&display=swap');
 
 .bg-main{
     background-image: linear-gradient(rgba(251, 249, 249, 0.4),rgba(0, 0, 0,0.4)),url("https://d33wubrfki0l68.cloudfront.net/daac8858fd4a0ccea44f59dfd079c3c16c263f33/c157c/assets/svg/common-bg.svg");
@@ -11,7 +10,7 @@
     clip-path: polygon(0 0, 100% 0, 100% 85%, 85% 100%, 0% 100%);
 }
 
-.title::before {
+/* .title::before {
     content: "Anthony Denicolo";
     position: absolute;
     top: 0;
@@ -20,7 +19,7 @@
     transform: translate(1px,1px);
     
     
-}
+} */
 .shade::before{
     content: '';
     position: absolute;
@@ -28,6 +27,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, .1),rgba(0, 0, 0, .1));
+    /* background-image: linear-gradient(rgba(0, 0, 0, .5),rgba(0, 0, 0, .5)); */
+    background-image: linear-gradient(to right top, rgb(5, 25, 55,.9), rgb(0, 77, 122,.9), rgb(0, 135, 147,.9), rgb(0, 191, 114,.9), rgb(168, 235, 18,.9));
     
 }
