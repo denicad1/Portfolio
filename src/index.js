@@ -1,6 +1,6 @@
 
+//handles form submission to send me an email
 const handleSubmit = e => {
-  
   e.preventDefault();
   const form = document.getElementById("form");
   const name = document.getElementById("name").value;
@@ -17,9 +17,9 @@ const handleSubmit = e => {
   }).catch(console.log())
   form.reset();
 }
-
+//downloads/opens resume 
 const handlePDF = () => window.open("../resources/resume/A.Denicolo_Resume.pdf", '_blank');
-
+//scroll behavior on sidebar choices
 const scrollToSection = ele => {
   ele.scrollIntoView({ behavior: "smooth" })
 }
@@ -32,44 +32,49 @@ const scrollContact = () => {
   scrollToSection(contact);
 }
 
-const animate = () => {
+//add animation to sections
+const animateSection = () => {
   class ele {
-    constructor(id, style,distance) {
+    constructor(id, style, distance) {
       this.id = id;
       this.style = style;
-      this.distance=distance;
+      this.distance = distance;
     }
   }
+  //objects for adding animation
+  const eles = [new ele('form', 'animate__fadeInUp', 700)
+    , new ele('projectsTitle', 'animate__slideInLeft', 600)];
+  eles.forEach((ele) => {
+    //get section of page
+    const section = document.getElementById(ele.id);
+    //get px distance from top
+    const topDistance = section.getBoundingClientRect().top;
+    //if the distance to the top is between 0-ele.distance
+    if (topDistance < ele.distance) {
+      section.classList.remove('invisible');
+      section.classList.add('animate__animated', ele.style);
 
-  window.addEventListener('scroll', (e) => {
-    const eles = [new ele('form', 'animate__fadeInUp',700)
-    ,new ele('projectsTitle', 'animate__slideInLeft',600)];
+    };
+  });
+};
+//add animation to projects in projects section
+const animateProjects = () => {
+  const projects = document.querySelectorAll('div.project');
+  projects.forEach((project, index) => {
+    //get px distance from top
+    const topDistance = project.getBoundingClientRect().top;
+    //if the distance to the top is between 0-ele.distance
+    if (topDistance < 600) {
+      project.classList.remove('invisible');
+      project.classList.add('animate__zoomIn');
+      project.classList.add(`animate__delay-${index}s`);
 
-    eles.forEach((ele)=>{
-      //get section of page
-      const section = document.getElementById(ele.id);
-      //get px distance from top
-      const topDistance = section.getBoundingClientRect().top;
-      console.log(ele.id ,topDistance);
-      //if the distance to the top is between 0-ele.distance
-      if (topDistance < ele.distance) {
-        section.classList.remove('invisible');
-        section.classList.add('animate__animated', ele.style);
-  
-      };
-    });
-    
-    
-    
-    
+    };
   });
 };
 
-
-
-
-// eles.forEach((ele) => {
-//   animate(ele.id, ele.style);
-// })
-animate('form', 'animate__fadeInUp');
-animate('projectsTitle', 'animate__slideInLeft');
+//event listener for animations
+window.addEventListener('scroll', e => {
+  animateSection();
+  animateProjects();
+});
