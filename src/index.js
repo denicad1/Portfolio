@@ -42,7 +42,7 @@ const animateSection = () => {
     }
   }
   //objects for adding animation
-  const eles = [new ele('form', 'animate__fadeInUp', 700)
+  const eles = [new ele('form', 'animate__fadeInUp', 600)
     , new ele('projectsTitle', 'animate__slideInLeft', 600)];
   eles.forEach((ele) => {
     //get section of page
