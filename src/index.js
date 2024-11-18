@@ -18,7 +18,7 @@
 //   form.reset();
 // }
 //downloads/opens resume 
-const handlePDF = () => window.open("../resources/resume/A.Denicolo_Resume.pdf", '_blank');
+const handlePDF = () => window.open("../resources/resume/Anthony Denicolo Resume.docx", '_blank');
 //scroll behavior on sidebar choices
 const scrollToSection = ele => {
   ele.scrollIntoView({ behavior: "smooth" })
